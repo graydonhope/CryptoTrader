@@ -1,23 +1,43 @@
-body {
+html, body {
     font-family: 'Roboto';
+    font-size: 85%;
 }
 
 form {
-    text-align: center;
+    text-align: left;
     border:1px solid #ccc;
-    /* width: 35%; */
     padding-bottom: 10px;
 }
 
-.create_account {
+.create-account {
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
 }
 
-.create_account_container {
-    padding-left: 20px;
+.create-account_container {
+    padding-left: 19px;
     padding-right: 20px;
 }
 
+input[type=text], input[type=password] {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    padding-right: 0px;
+    border: none;
+    margin: 5px 0 15px 0;
+    background: #f1f1f1;
+}
+
+#create-account__confirm-password {
+    margin-bottom: 10px;
+}
+
+#create-account__fullname {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form */
