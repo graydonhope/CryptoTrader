@@ -8,15 +8,15 @@
 </head>
 <body>
     <div class="create-account">
-        <form>
+        <form id="create-account_form">
             <div class="create-account_container">
-                <h2>CryptoTrader</h2>
+                <h2 id="create-account_title">CryptoTrader</h2>
                 <h3>Sign Up</h3>
                 <p>Please complete the form to create an account.</p>
                 <hr>
 
                 <label id="create-account__fullname" class="create-account__label" for="fullname"><b>Full Name</b></label>
-                <input class="create-account__input" type="text" placeholder="Enter Full Name" name="fullname" required>
+                <input class="create-account__input" type="text" placeholder="Enter Name" name="fullname" required>
                 <br>
                 
                 <label class="create-account__label" for="email"><b>Email</b></label>
@@ -38,8 +38,8 @@
                 <p>By creating an account, you agree to our <a href="#">Terms and Conditions.</a></p>
     
                 <div class="create-account_register-buttons">
-                    <button type="button" class="cancel_button">Cancel</button>
-                    <button type="button" class="signup_button">Sign Up</button>
+                    <button type="button" class="create-account__cancel-btn">Cancel</button>
+                    <button type="submit" class="create-account__signUp-btn">Sign Up</button>
                 </div>
             </div>
         </form>
