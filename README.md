@@ -1,2 +1,2 @@
 # CryptoTrader
-SEG 3125 Project
+A Cryptocurrency trading and market analysis website.
