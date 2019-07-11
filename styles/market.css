@@ -1,0 +1,28 @@
+body{
+    align-content: center;
+    text-align: center;
+}
+#body_title{
+    padding-top: 250px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding-bottom: 1%
+}
+#body_input_search-bar{
+   width: 50%;
+   text-align: center;
+   border: 0;
+   outline: 0;
+   background: transparent;
+   border-bottom: 1px solid #dee2e6;
+}
+.body_table_market-coins{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+   
+}
+
+
