@@ -1,6 +1,8 @@
 html, body {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     background-color: #3A506B;
+    font-family: 'Roboto';
+    font-size: 85%;
 }
 
 .body_row {
@@ -12,21 +14,47 @@ html, body {
     float: left;
 }
 
+.body_ticker {
+    border-radius: 15px;
+}
+
+.body_graph {
+    overflow: hidden;
+    padding-top: 0%;
+    margin-left: 40%;
+    width: 60%;
+    height: 79vh;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.body_graph iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
 #body_list {
     margin-top: 5px;
-    font-size: 85%;
-}
-
-#body_ticker {
-    /* height: 40px; */
-    /* padding-right: 5px; */
-}
-
-#body_graph {
-    /* height: 540px; */
 }
 
 #body_graph__iframe {
     line-height: 14px;
-    box-sizing: content-box;
+}
+
+#body_btcWrapper {
+    font-size: 1em;
+    color: white;
+}
+
+#body_row__btcPrice {
+    font-size: 1em;
+    display: inline;
+}
+
+#body_ticker__iframe {
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
