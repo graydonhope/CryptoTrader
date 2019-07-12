@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/detail.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/topNav.css"/>
+    </head>
+    <body>
+        <ul id="body_list">
+            <li id="body_homepage" class="topNav"><a href="#">CryptoTrader</a></li>
+            <li><a class="body_topNav" href="#about">Register</a></li>
+            <li><a class="body_topNav" href="#about">Login</a></li>
+            <li><a class="body_topNav" href="#about">FAQ</a></li>
+            <li><a class="body_topNav" href="market.html">Market</a></li>
+        </ul>
+        <div class="body_container">
+            <div id="body_ticker">
+                <iframe id="iframe" src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=no" 
+                    width="57%" 
+                    height="36" 
+                    scrolling="auto" 
+                    marginwidth="0" 
+                    marginheight="0" 
+                    frameborder="0" 
+                    align="right">
+                </iframe>
+            </div>
+            <div id="body_graph">
+                <iframe id="body_graph__iframe" src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" 
+                    width="60%" 
+                    height="460" 
+                    scrolling="auto" 
+                    marginheight="0" 
+                    frameborder="0"
+                    align="right">
+                </iframe>
+            </div>
+        </div>
+    </body>
+</html>

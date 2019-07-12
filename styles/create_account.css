@@ -31,36 +31,6 @@ hr {
     border: 1px solid #f1f1f1;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #0B132B;
-    border-radius: 15px;
-  }
-  
-li {
-    float: right;
-    border-left: 1px solid #bbb;
-}
-
-li:last-child {
-    border-left: none;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #6FFFE9;
-}
-
 input[type=text], input[type=password] {
     width: 100%;
     display: inline-block;
@@ -75,10 +45,6 @@ input:focus {
     outline: none;
     box-shadow: 0 0 1pt 1pt;
 }
-
-.body_topNav {
-    background-color: #0B132B;
-  }
 
 .create-account {
     position: fixed;
@@ -119,13 +85,6 @@ input:focus {
 .create-account__signUp-btn {
     float: left;
     width: 50%;
-}
-
-#body_homepage {
-	border-right: 1px solid #bbb;
-    background-color: #5BC0BE;
-    float: left;
-    border-left: none;
 }
 
 #create-account_form {
