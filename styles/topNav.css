@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0B132B;
+    border-radius: 15px;
+  }
+  
+li {
+    float: right;
+    border-left: 1px solid #bbb;
+}
+
+li:last-child {
+    border-left: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #6FFFE9;
+}
+
+.body_topNav {
+    background-color: #0B132B;
+}
+
+#body_homepage {
+    border-right: 1px solid #bbb;
+    background-color: #5BC0BE;
+    float: left;
+    border-left: none;
+}
