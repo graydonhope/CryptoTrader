@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="styles/topNav.css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <script src="scripts/detail.js"></script>
+        <script type="text/javascript" src="scripts\currency.js"></script>
     </head>
     <body>
         <ul id="body_list">
@@ -17,36 +18,50 @@
         <div class="body_row">
             <div class="body_column">
                 <div id="body_btcWrapper">
-                    <!-- LeftMost Column Top title -->
-                    <h2>Bitcoin (BTC)</h2>
-                    <h3>Current Price: <div id="body_row__btcPrice"></div></h3>
+                    <div class="coinmarketcap-currency-widget" 
+                        data-currencyid="1" 
+                        data-base="USD" 
+                        data-secondary="" 
+                        data-ticker="true" 
+                        data-rank="true" 
+                        data-marketcap="true" 
+                        data-volume="true" 
+                        data-stats="USD" 
+                        data-statsticker="true">
+                    </div>
                 </div>
-                <div>
+                <div class=body_row__transaction>
                     <!-- Leftmost column bottom half -->
-                    <h2>Leftmost column middle</h2>
+                    <h3>Amount to Buy: 
+                        <div class="body_row_transaction__amount">$ 3.65</div>
+                    </h3>
                 </div>
-                <div>
+                <div class="body_row__transaction">
                     <!-- Leftmost column bottom -->
-                    <h2>Bottom</h2>
+                    <h3>Amount to Sell: 
+                        <div class="body_row_transaction__amount">$ 5.34</div>
+                    </h3>
                 </div>
             </div>
-            <div class="body_ticker">
-                <iframe id="body_ticker__iframe" src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=no" 
-                    width="60%" 
-                    height="36" 
-                    scrolling="auto"  
-                    marginheight="0" 
-                    frameborder="0" 
-                    align="right">
-                </iframe>
-            </div>
-            <div class="body_graph">
-                <iframe id="body_graph__iframe" src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505"  
-                    scrolling="auto" 
-                    marginheight="0" 
-                    frameborder="0"
-                    align="right">
-                </iframe>
+            <div class="body_row_container">
+                <div class="body_ticker">
+                    <iframe id="body_ticker__iframe" src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=no" 
+                        width="60%" 
+                        height="36" 
+                        scrolling="auto"  
+                        marginheight="0" 
+                        frameborder="0" 
+                        align="right">
+                    </iframe>
+                </div>
+                <div class="body_graph">
+                    <iframe id="body_graph__iframe" src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505"  
+                        scrolling="auto" 
+                        marginheight="0" 
+                        frameborder="0"
+                        align="right">
+                    </iframe>
+                </div>
             </div>
         </div>
     </body>
