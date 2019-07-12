@@ -1,19 +1,25 @@
-html {
+html, body {
     overflow-y: hidden;
+    background-color: #3A506B;
 }
 
-.body_container {
-    padding-right: 25px;
-    padding-top: 30px;
+.body_row {
+    padding-right: 15px;
+    padding-top: 25px;
+}
+
+.body_column {
+    float: left;
 }
 
 #body_list {
-    margin-top: 15px;
+    margin-top: 5px;
+    font-size: 85%;
 }
 
 #body_ticker {
     /* height: 40px; */
-    padding-right: 5px;
+    /* padding-right: 5px; */
 }
 
 #body_graph {
