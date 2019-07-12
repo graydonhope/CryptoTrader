@@ -26,6 +26,7 @@ li a {
 
 li a:hover:not(.active) {
     background-color: #6FFFE9;
+    color: #3A506B;
 }
 
 .body_topNav {

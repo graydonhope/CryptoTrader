@@ -5,6 +5,12 @@ html, body {
     font-size: 85%;
 }
 
+input:focus {
+    outline: none;
+    box-shadow: 0 0 1pt 1pt;
+    color: #6FFFE9;
+}
+
 .body_row {
     padding-right: 15px;
     padding-top: 25px;
@@ -13,10 +19,6 @@ html, body {
 .body_column {
     float: left;
     width: 35%;
-}
-
-.body_row_container {
-    /* border: 1px solid #ccc; */
 }
 
 .body_ticker {
@@ -40,8 +42,9 @@ html, body {
     width: 100%;
 }
 
-.body_row__transaction {
-    color: white;
+.body_row_transaction {
+    color: #3A506B;
+    background-color: white;
     padding: 5px;
     padding-left: 15px;
     margin-top: 10px;
@@ -50,13 +53,59 @@ html, body {
 }
 
 .body_row_transaction__amount {
-    border: 1px solid #ccc;
+    border: 1px solid #3A506B;
     border-radius: 15px;
     width: 55%;
     padding: 5px;
     margin-left: 20px;
     display: inline-block;
     text-align: center;
+    color: #3A506B;
+    cursor: auto;
+}
+
+.body_row_transaction__amount:hover {
+    border-color: #5BC0BE;;
+}
+.body_row_transaction__amount:focus {
+    border: none;
+}
+
+.body_row_transaction__amount::placeholder {
+    color: #3A506B;
+}
+
+.body_row_transaction__container-btn {
+    text-align: center;
+}
+
+.body_row_transaction__btn {
+    width: 25%;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #5BC0BE;
+    opacity: 0.9;
+}
+
+.body_row_transaction__btn:hover {
+    opacity: 1;
+    background-color: #6FFFE9;
+    color: #3A506B;
+    cursor: pointer;
+}
+
+.body_row_transaction_container-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.body_row_transaction__info {
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .coinmarketcap-currency-widget {

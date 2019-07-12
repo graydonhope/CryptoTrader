@@ -30,17 +30,21 @@
                         data-statsticker="true">
                     </div>
                 </div>
-                <div class=body_row__transaction>
-                    <!-- Leftmost column bottom half -->
-                    <h3>Amount to Buy: 
-                        <div class="body_row_transaction__amount">$ 3.65</div>
-                    </h3>
+                <div class=body_row_transaction>
+                    <h3>Amount to Buy: <input class="body_row_transaction__amount" type="text" placeholder="$3.65" onfocus="this.placeholder = ''" onblur="this.placeholder = '$3.65'"></h3>
+                    <div class=body_row_transaction_container-info>
+                        <h4>Current Balance: <div class=body_row_transaction__info>$15.00</div></h4>
+                        <h4>New Balance: <div class=body_row_transaction__info>$11.35</div></h4>
+                    </div>
+                    <div class="body_row_transaction__container-btn"><button class="body_row_transaction__btn">Buy</button></div>
                 </div>
-                <div class="body_row__transaction">
-                    <!-- Leftmost column bottom -->
-                    <h3>Amount to Sell: 
-                        <div class="body_row_transaction__amount">$ 5.34</div>
-                    </h3>
+                <div class="body_row_transaction">
+                    <h3>Amount to Sell: <input class="body_row_transaction__amount" type="text" placeholder="$19.21" onfocus="this.placeholder = ''" onblur="this.placeholder = '$19.21'">
+                    <div class=body_row_transaction_container-info>
+                        <h4>Current Balance: <div class=body_row_transaction__info>$15.00</div></h4>
+                        <h4>New Balance: <div class=body_row_transaction__info>$34.21</div></h4>
+                    </div>
+                    <div class="body_row_transaction__container-btn"><button class="body_row_transaction__btn">Buy</button></div>
                 </div>
             </div>
             <div class="body_row_container">
