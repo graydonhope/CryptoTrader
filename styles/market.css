@@ -1,5 +1,4 @@
 html {
-    background-color: #3A506B;
     font-family: 'Roboto';
     font-size: 85%;
     background-image: url("../assets/background.png")
@@ -7,7 +6,6 @@ html {
 body{
     align-content: center;
     text-align: center;
-    background-color: #3A506B;
     color: white;
     background-image: url("../assets/background.png")
 }
