@@ -1,13 +1,27 @@
+html {
+    background-color: #3A506B;
+    font-family: 'Roboto';
+    font-size: 85%;
+    background-image: url("../assets/background.png")
+}
 body{
     align-content: center;
     text-align: center;
+    background-color: #3A506B;
+    color: white;
+    background-image: url("../assets/background.png")
 }
+::placeholder {
+    color: #f5f5f5;
+    opacity: 0.5; 
+}
+  
 #body_title{
     padding-top: 250px;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     margin: auto;
-    padding-bottom: 1%
+    padding-bottom: 2%
 }
 #body_input_search-bar{
    width: 50%;
@@ -15,14 +29,33 @@ body{
    border: 0;
    outline: 0;
    background: transparent;
-   border-bottom: 1px solid #dee2e6;
+   border-bottom: 1px solid white;
+   color: white;
+   font-size: 20px;
+   font-family: Arial, FontAwesome;
+   background-image: url("../assets/search-icon.png")
 }
 .body_table_market-coins{
+    background-color: white;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-   
+    width: 80%;   
+    font-size: 16px;
 }
+.body_table_market-coins thead{
+    background: #F1F1F1;
+    font-size: 20px;
+}
+.body_table_market-coins tbody tr{
+   cursor: pointer;
+}
+.body_table_market-coins tbody tr:hover{
+    background-color: #e8e8e8;
+ }
+#table_row_no-data{
+    font-size: 20px;
+}
+
 
 

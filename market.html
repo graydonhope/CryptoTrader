@@ -3,27 +3,42 @@
      <head>
         <meta charset="utf-8">
         <title> Market </title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="Stylesheet" href="styles/market.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/topNav.css"/>
+ 
     </head>
+    <header>
+        <ul id="body_list">
+            <li id="body_homepage" class="topNav"><a href="#">CryptoTrader</a></li>
+            <li><a class="body_topNav" href="create_account.html">Register</a></li>
+            <li><a class="body_topNav" href="#about">Login</a></li>
+            <li><a class="body_topNav" href="#about">FAQ</a></li>
+            <li><a class="body_topNav" href="market.html">Market</a></li>
+        </ul>
+    </header>
     <body>
-        <h1 id='body_title'>BTC Market</h1>
-        <input id='body_input_search-bar' type="text" placeholder="Search Coin...">
+        <h1 id='body_title'>Market</h1>
+        <input id='body_input_search-bar' type="text" placeholder="&#xF002; Search Coin..." onkeyup="filterSearch()">
         <table class='table body_table_market-coins'>
             <thead>
                 <th>Ticker</th>
                 <th>Name</th>
-                <th>BTC Value</th>
+                <th>USD Value</th>
                 <th>24hr Change</th>
             </thead>
             <tbody>
-                <tr>
-                <td>LTC</td>
-                <td>LiteCoin</td>
-                <td>0.00105</td>
-                <td>-14.54%</td>
+                <tr id=table_row_no-data>
+                    <td colspan="4">No coins matched your criteria.</td>
                 </tr>
             </tbody>
+            <tbody>
+            </tbody>
         </table>
+        <script src='scripts/jquery-3.4.1.min.js'></script>
+        <script src='scripts/config.js'></script>
+        <script src='scripts/market.js'></script>
     </body>
 </html>
