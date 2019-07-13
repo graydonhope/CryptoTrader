@@ -68,11 +68,11 @@ function insertRow(ticker, name, usdValue, change,href){
     usdValueCell.innerHTML = usdValue
     if(change.includes("-")){
         changeCell.style.color = '#EA0070' //red
-        changeCell.innerHTML = change
+        changeCell.innerHTML = change +"%"
     }
     else{
         changeCell.style.color = '#7EAF2C' //green
-        changeCell.innerHTML = "+" + change
+        changeCell.innerHTML = "+" + change +"%"
     }
 }
 function containsCoin(targetTicker){
@@ -93,11 +93,11 @@ function updateRow(row, usdValue, change){
     usdValueCell.innerHTML = usdValue
     if(change.includes("-")){
         changeCell.style.color = '#EA0070' //red
-        changeCell.innerHTML = change
+        changeCell.innerHTML = change +"%"
     }
     else{
         changeCell.style.color = '#7EAF2C' //green
-        changeCell.innerHTML = "+" + change
+        changeCell.innerHTML = "+" + change +"%"
     }
 }
 
