@@ -1,7 +1,8 @@
 html, body {
     font-family: 'Roboto';
     font-size: 85%;
-    background-color: #3A506B;
+    background-image: url("../assets/background.png");
+    /* background-color: #3A506B; */
 }
 
 form {
@@ -69,21 +70,18 @@ input:focus {
     padding-left: 5px;
 }
 
+.create-account_register-buttons{
+    text-align: center;
+}
+
 .create-account_register-buttons::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.create-account__cancel-btn {
-    background-color: #f44336;
-    float: left;
-    width: 50%;
-}
-
 .create-account__signUp-btn {
-    float: left;
-    width: 50%;
+    width: 70%;
 }
 
 #create-account_form {
@@ -91,7 +89,7 @@ input:focus {
 }
 
 #create-account_title {
-    text-align: left;
+    text-align: center;
 }
 
 #create-account__fullname {
@@ -100,9 +98,12 @@ input:focus {
 }
 
 #create-account__confirm-password {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
+#create-account_form__signIn {
+    padding-bottom: 20px;
+}
 /* ToDo: Add top navigation bar */
 /* ToDo: When user clicks submit and field isn't filled out, the bounding box is a rectangle but it should match the border radius */
 /* ToDo: Add JavaScript to check if passwords match each other */
