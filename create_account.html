@@ -8,9 +8,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
-    <ul>
-        <li id="body_homepage" class="topNav"><a href="#">CryptoTrader</a></li>
-        <li><a class="body_topNav" href="#about">Register</a></li>
+    <ul id="body_list">
+        <li id="body_homepage" class="topNav"><a href="home.html">CryptoTrader</a></li>
+        <li><a class="body_topNav" href="#">Register</a></li>
         <li><a class="body_topNav" href="#about">Login</a></li>
         <li><a class="body_topNav" href="#about">FAQ</a></li>
         <li><a class="body_topNav" href="market.html">Market</a></li>
@@ -39,15 +39,10 @@
                 <input id="create-account__confirm-password" class="create-account__input" type="password" placeholder="Please Confirm Password" name="password-repeat" required>
                 <br>
     
-                <label>
-                    <input type="checkbox" checked="checked" name="remember_me">Remember me
-                </label>
-    
-                <p>By creating an account, you agree to our <a href="#">Terms and Conditions.</a></p>
+                <p id="create-account_form__signIn">Already have an account? <a href="#">Sign in here</a></p>
     
                 <div class="create-account_register-buttons">
-                    <button type="button" class="create-account__cancel-btn">Cancel</button>
-                    <button type="submit" class="create-account__signUp-btn">Sign Up</button>
+                    <button type="submit" class="create-account__signUp-btn" onclick="window.location.href = 'market.html'">Sign Up</button>
                 </div>
             </div>
         </form>
