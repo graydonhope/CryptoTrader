@@ -104,6 +104,10 @@ input:focus {
 #create-account_form__signIn {
     padding-bottom: 20px;
 }
+
+#body_list {
+    font-size: 100%;
+}
 /* ToDo: Add top navigation bar */
 /* ToDo: When user clicks submit and field isn't filled out, the bounding box is a rectangle but it should match the border radius */
 /* ToDo: Add JavaScript to check if passwords match each other */
