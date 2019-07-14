@@ -5,6 +5,8 @@ ul {
     overflow: hidden;
     background-color: #0B132B;
     border-radius: 15px;
+    margin-top: 5px;
+    font-size: 85%;
   }
   
 li {

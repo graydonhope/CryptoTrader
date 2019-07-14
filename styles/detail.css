@@ -173,8 +173,16 @@ input:focus {
     width: 100%;
 }
 
-#body_list {
-    margin-top: 5px;
+.body_ticker__iframe {
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-height: inherit;
+    height: 100%;
+}
+
+.body_graph__iframe {
+    border: 6px solid black;
 }
 
 .body_btcWrapper {
@@ -194,14 +202,6 @@ input:focus {
     display: inline;
 }
 
-.body_ticker__iframe {
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    max-height: inherit;
-    height: 100%;
-}
-
-.body_graph__iframe {
-    border: 6px solid black;
+#body_list {
+    font-size: 100%;
 }
