@@ -9,7 +9,7 @@
     </head>
     <body>
         <ul id="body_list">
-            <li id="body_homepage" class="topNav"><a href="#">CryptoTrader</a></li>
+            <li id="body_homepage" class="topNav"><a href="home.html">CryptoTrader</a></li>
             <li><a class="body_topNav" href="create_account.html">Register</a></li>
             <li><a class="body_topNav" href="#about">Login</a></li>
             <li><a class="body_topNav" href="#about">FAQ</a></li>
@@ -17,7 +17,7 @@
         </ul>
         <div class="body_row">
             <div class="body_column">
-                <div id="body_btcWrapper">
+                <div class="body_btcWrapper">
                     <div class="coinmarketcap-currency-widget" 
                         data-currencyid="1" 
                         data-base="USD" 
@@ -39,7 +39,7 @@
                     <div class="body_row_transaction__container-btn"><button class="body_row_transaction__btn">Buy</button></div>
                 </div>
                 <div class="body_row_transaction">
-                    <h3>Amount to Sell: <input class="body_row_transaction__amount" type="text" placeholder="$19.21" onfocus="this.placeholder = ''" onblur="this.placeholder = '$19.21'">
+                    <h3>Amount to Sell: <input class="body_row_transaction__amount" type="text" placeholder="$19.21" onfocus="this.placeholder = ''" onblur="this.placeholder = '$19.21'"></h3>
                     <div class=body_row_transaction_container-info>
                         <h4>Current Balance: <div class=body_row_transaction__info>$15.00</div></h4>
                         <h4>New Balance: <div class=body_row_transaction__info>$34.21</div></h4>
@@ -49,7 +49,7 @@
             </div>
             <div class="body_row_container">
                 <div class="body_ticker">
-                    <iframe id="body_ticker__iframe" src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=no" 
+                    <iframe class="body_ticker__iframe" src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=no" 
                         width="60%" 
                         height="36" 
                         scrolling="auto"  
@@ -59,9 +59,10 @@
                     </iframe>
                 </div>
                 <div class="body_graph">
-                    <iframe id="body_graph__iframe" src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505"  
+                    <iframe class="body_graph__iframe" src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505"  
                         scrolling="auto" 
                         marginheight="0" 
+                        width="60%"
                         frameborder="0"
                         align="right">
                     </iframe>

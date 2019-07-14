@@ -1,7 +1,46 @@
 html, body {
     background-color: #3A506B;
+    background-image: url("../assets/background.png");
     font-family: 'Roboto';
     font-size: 85%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+}
+
+@media screen and (max-width: 940px) {
+    div.body_column {
+        display: none;
+    }
+    iframe.body_ticker__iframe {
+        width: 100%;
+    }
+    div.body_graph {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    div.body_btcWrapper {
+        display: none;
+    }
+    div.body_row_transaction {
+        height: 30%;
+    }
+}
+
+@media screen and (max-height: 395px) {
+    div.body_column {
+        display: none;
+    }
+    iframe.body_ticker__iframe {
+        width: 100%;
+    }
+    div.body_graph {
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 
 input:focus {
@@ -11,25 +50,29 @@ input:focus {
 }
 
 .body_row {
+    margin-top: 25px;
     padding-right: 15px;
-    padding-top: 25px;
+    height: 80%;
 }
 
 .body_column {
     float: left;
     width: 35%;
+    height: 100%;
 }
 
 .body_ticker {
     border-radius: 15px;
+    height: 10%;
 }
 
 .body_graph {
     overflow: hidden;
     padding-top: 0%;
+    margin-top: 0px;
     margin-left: 40%;
-    width: 60%;
-    height: 79vh;
+    /* width: 60%; */
+    height: 90%;
     border-radius: 15px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -41,14 +84,22 @@ input:focus {
     width: 100%;
 }
 
+.body_row_container {
+    max-height: inherit;
+    height: 100%;
+}
+
 .body_row_transaction {
     color: #3A506B;
     background-color: white;
     padding: 5px;
     padding-left: 15px;
-    margin-top: 10px;
+    margin-top: 22px;
     border: 1px solid #ccc;
     border-radius: 15px;
+    max-height: inherit;
+    height: 25%;
+    position: relative;
 }
 
 .body_row_transaction__amount {
@@ -76,6 +127,10 @@ input:focus {
 
 .body_row_transaction__container-btn {
     text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: table;
 }
 
 .body_row_transaction__btn {
@@ -100,6 +155,8 @@ input:focus {
     display: flex;
     justify-content: left;
     align-items: center;
+    max-height: inherit;
+    height: 20%;
 }
 
 .body_row_transaction__info {
@@ -111,19 +168,24 @@ input:focus {
     color: black;
     background: white;
     border-radius: 15px;
+    height: 100%;
+    width: 100%;
 }
 
 #body_list {
     margin-top: 5px;
 }
 
-#body_graph__iframe {
-    line-height: 14px;
-}
-
-#body_btcWrapper {
+.body_btcWrapper {
     font-size: 1em;
     color: white;
+    max-height: inherit;
+    height: 35.5%;
+    max-width: inherit;
+    min-width: 100%;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #body_row__btcPrice {
@@ -131,8 +193,14 @@ input:focus {
     display: inline;
 }
 
-#body_ticker__iframe {
+.body_ticker__iframe {
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    max-height: inherit;
+    height: 100%;
+}
+
+.body_graph__iframe {
+    border: 6px solid black;
 }
