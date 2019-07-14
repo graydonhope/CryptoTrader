@@ -58,7 +58,9 @@ function updateDiv(div, usdValue, change){
         change_p.innerHTML = "+" + change + "%"
     }
 }
-
+function goToMarket(){
+    window.location.href = "market.html"
+}
 function goToBTC(){
     window.location.href = "detail.html"
 }

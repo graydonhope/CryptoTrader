@@ -15,7 +15,7 @@ body{
 }
   
 #body_title{
-    padding-top: 250px;
+    padding-top: 7%;
     text-align: center;
     font-size: 60px;
     margin: auto;
@@ -40,6 +40,8 @@ body{
     margin-right: auto;
     width: 80%;   
     font-size: 16px;
+    border-radius: 8px;
+    border-collapse: separate !important;
 }
 .body_table_market-coins thead{
     background: #F1F1F1;

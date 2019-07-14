@@ -10,7 +10,7 @@ body{
     background-image: url("../assets/background.png")
 }
 #body_title{
-    padding-top: 6%;
+    padding-top: 3%;
     font-size: 50px;
 }
 #body_coin-row{
@@ -40,7 +40,7 @@ body{
     cursor: pointer;
 }
 #body_button_start-trading{
-    margin-top: 10%;
+    margin-top: 4%;
     padding: 15px 30px;
     align-content: center;
     text-align: center;
