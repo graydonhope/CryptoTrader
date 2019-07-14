@@ -111,6 +111,20 @@ input:focus {
     margin-top: 0px;
     padding: 0px;
 }
+
+#fullname-error {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 2px;
+}
+
+#password-error {
+    padding-left: 2px;
+}
+
+#dialog {
+    display: none;
+}
 /* ToDo: Add top navigation bar */
 /* ToDo: When user clicks submit and field isn't filled out, the bounding box is a rectangle but it should match the border radius */
 /* ToDo: Add JavaScript to check if passwords match each other */

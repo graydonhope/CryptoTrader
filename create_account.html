@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Create Account</title>
+    <script src='scripts/jquery-3.4.1.min.js'></script>
     <script src="scripts/create_account.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="styles/create_account.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="styles/topNav.css"/>
@@ -17,6 +18,9 @@
     </ul>
 </header>
 <body>
+    <div id="dialog">
+        <p>Account Successfully Created!</p>
+    </div>
     <div class="create-account">
         <form id="create-account_form">
             <div class="create-account_container">
@@ -26,25 +30,27 @@
                 <hr>
 
                 <label id="create-account__fullname" class="create-account__label" for="fullname"><b>Full Name</b></label>
-                <input class="create-account__input" type="text" placeholder="Enter Name" name="fullname" required>
-                <br>
+                <input class="create-account__input" type="text" placeholder="Enter Name" id="fullname" name="fullname" onfocus="nameFocus()" onfocusout="checkName()" required>
+                <p id="fullname-error"></p>
+                <!-- <br> -->
                 
                 <label class="create-account__label" for="email"><b>Email</b></label>
-                <input class="create-account__input" type="text" placeholder="Enter Email" name="email" required>
+                <input class="create-account__input" type="text" placeholder="Enter Email" id="email" name="email" onfocus="emailFocus()" onfocusout="validateEmail()" required>
                 <br>
     
                 <label class="create-account__label" for="password"><b>Password</b></label>
-                <input class="create-account__input" type="password" placeholder="Enter Password" name="password" required>
+                <input class="create-account__input" type="password" placeholder="Enter Password" id="password" name="password" onfocusout="checkPasswords()" required>
                 <br>
                 
                 <label class="create-account__label" for="password_repeat"><b>Confirm Password</b></label>
-                <input id="create-account__confirm-password" class="create-account__input" type="password" placeholder="Please Confirm Password" name="password-repeat" required>
-                <br>
+                <input id="create-account__confirm-password" class="create-account__input" type="password" placeholder="Please Confirm Password" name="password-repeat" onfocusout="checkPasswords()" required>
+                <p id="password-error"></p>
+                <!-- <br> -->
     
                 <p id="create-account_form__signIn">Already have an account? <a href="#">Sign in here</a></p>
     
                 <div class="create-account_register-buttons">
-                    <button type="submit" class="create-account__signUp-btn" onclick="window.location.href = 'market.html'">Sign Up</button>
+                    <button type="submit" class="create-account__signUp-btn" onclick="return createAccount()">Sign Up</button>
                 </div>
             </div>
         </form>
