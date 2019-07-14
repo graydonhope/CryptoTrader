@@ -2,7 +2,6 @@ html, body {
     font-family: 'Roboto';
     font-size: 85%;
     background-image: url("../assets/background.png");
-    /* background-color: #3A506B; */
 }
 
 form {
@@ -107,6 +106,10 @@ input:focus {
 
 #body_list {
     font-size: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 0px;
 }
 /* ToDo: Add top navigation bar */
 /* ToDo: When user clicks submit and field isn't filled out, the bounding box is a rectangle but it should match the border radius */
