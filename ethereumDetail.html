@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coin Detail</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/detail.css"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/topNav.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/detail.js"></script>
+        <script type="text/javascript" src="scripts/currency.js"></script>
+        <script src="scripts\showAds.js"></script>
+    </head>
+    <body>
+        <ul id="body_list">
+            <li id="body_homepage" class="topNav"><a href="home.html">CryptoTrader</a></li>
+            <li><a class="body_topNav" href="create_account.html">Register</a></li>
+            <li><a class="body_topNav" href="#about">Login</a></li>
+            <li><a class="body_topNav" href="#about">FAQ</a></li>
+            <li><a class="body_topNav" href="market.html">Market</a></li>
+        </ul>
+        <div class="body_row">
+            <div class="body_column">
+                <div class="body_btcWrapper">
+                    <div class="coinmarketcap-currency-widget" 
+                        data-currencyid="1027" 
+                        data-base="USD" 
+                        data-secondary="" 
+                        data-ticker="true" 
+                        data-rank="true" 
+                        data-marketcap="true" 
+                        data-volume="true" 
+                        data-stats="USD" 
+                        data-statsticker="true">
+                    </div>
+                </div>
+                <div class=body_row_transaction>
+                    <h3>Amount to Buy: <input class="body_row_transaction__amount" type="text" placeholder="$3.65" onfocus="this.placeholder = ''" onblur="this.placeholder = '$3.65'"></h3>
+                    <div class=body_row_transaction_container-info>
+                        <h4>Current Balance: <div class=body_row_transaction__info>$15.00</div></h4>
+                        <h4>New Balance: <div class=body_row_transaction__info>$11.35</div></h4>
+                    </div>
+                    <div class="body_row_transaction__container-btn"><button class="body_row_transaction__btn">Buy</button></div>
+                </div>
+                <div class="body_row_transaction">
+                    <h3>Amount to Sell: <input class="body_row_transaction__amount" type="text" placeholder="$19.21" onfocus="this.placeholder = ''" onblur="this.placeholder = '$19.21'"></h3>
+                    <div class=body_row_transaction_container-info>
+                        <h4>Current Balance: <div class=body_row_transaction__info>$15.00</div></h4>
+                        <h4>New Balance: <div class=body_row_transaction__info>$34.21</div></h4>
+                    </div>
+                    <div class="body_row_transaction__container-btn"><button class="body_row_transaction__btn">Buy</button></div>
+                </div>
+            </div>
+            <div class="body_row_container">
+                <div class="body_ticker">
+                    <iframe class="body_ticker__iframe" src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=light&pref_coin_id=1505&invert_hover=no" 
+                        width="60%" 
+                        height="36" 
+                        scrolling="auto"  
+                        marginheight="0" 
+                        frameborder="0" 
+                        align="right">
+                    </iframe>
+                </div>
+                <div class="body_graph">
+                    <iframe class="body_graph__iframe" src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=145&pref_coin_id=1505" 
+                        width="60%" 
+                        scrolling="auto" 
+                        marginheight="0" 
+                        frameborder="0" 
+                        align="right">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

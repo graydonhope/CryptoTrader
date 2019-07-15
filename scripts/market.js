@@ -4,8 +4,8 @@ var searchBar_input = document.getElementById("body_input_search-bar")
 var noData_tableRow= document.getElementById("table_row_no-data")
 //Variables
 var coins = [["BTC","BitCoin", "detail.html"],
-            ["ETH","Ethereum","detail.html"], 
-            ["MIOTA","IOTA","detail.html"]]
+            ["ETH","Ethereum","ethereumDetail.html"], 
+            ["MIOTA","IOTA","iotaDetail.html"]]
 
 //Methods
 $(document.body).on("click", "tr[data-href]", function(){

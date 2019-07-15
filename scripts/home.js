@@ -66,10 +66,10 @@ function goToBTC(){
 }
 
 function goToMIOTA(){
-    window.location.href = "detail.html"
+    window.location.href = "iotaDetail.html"
 }
 function goToETH(){
-    window.location.href = "detail.html"
+    window.location.href = "ethereumDetail.html"
 
 }
 fetchCoinData()
