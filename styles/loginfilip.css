@@ -1,0 +1,127 @@
+html, body {
+    font-family: 'Roboto';
+    font-size: 85%;
+    background-image: url("back2.png");
+}
+
+form {
+    text-align: left;
+    border:1px solid #ccc;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+button {
+    border-radius: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 8px;
+    border: none;
+    margin: 5px 0 15px 0;
+    background: #f1f1f1;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 1pt 1pt;
+}
+
+.create-account {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.create-account_container {
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.create-account__input {
+    border-radius: 25px;
+}
+
+.create-account__input:active {
+    border-radius: 75px;
+}
+
+.create-account__label {
+    padding-left: 5px;
+}
+
+.create-account_register-buttons{
+    text-align: center;
+}
+
+.create-account_register-buttons::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.create-account__signUp-btn {
+    width: 70%;
+}
+
+#create-account_form {
+    border-radius: 25px;
+}
+
+#create-account_title {
+    text-align: center;
+}
+
+#create-account__fullname {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#create-account__confirm-password {
+    margin-bottom: 2px;
+}
+
+#create-account_form__signIn {
+    padding-bottom: 20px;
+}
+
+#body_list {
+    font-size: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+#fullname-error {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 2px;
+}
+
+#password-error {
+    padding-left: 2px;
+}
+
+#dialog {
+    display: none;
+}

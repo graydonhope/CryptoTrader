@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <script src='scripts/jquery-3.4.1.min.js'></script>
+    <script src="scripts/create_account.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="create_account.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="topNav.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="login.js"></script>
+</head>
+<header>
+    <ul id="body_list">
+        <li id="body_homepage" class="topNav"><a href="home.html">CryptoTrader</a></li>
+        <li><a class="body_topNav" href="#">Register</a></li>
+        <li><a class="body_topNav" href="#about">Login</a></li>
+        <li><a class="body_topNav" href="#about">FAQ</a></li>
+        <li><a class="body_topNav" href="market.html">Market</a></li>
+    </ul>
+</header>
+<body>
+    <div id="dialog">
+        <p>Logged in</p>
+    </div>
+    <div class="create-account">
+        <form id="create-account_form">
+            <div class="create-account_container">
+                <h2 id="create-account_title">CryptoTrader</h2>
+                <h3>Sign In</h3>
+                <hr>
+                
+                <label class="create-account__label" for="email"><b>Email</b></label>
+                <input class="create-account__input" type="text" placeholder="Enter Email" id="username" name="email" onfocus="emailFocus()" onfocusout="validateEmail()" required>
+                <br>
+    
+                <label class="create-account__label" for="password"><b>Password</b></label>
+                <input class="create-account__input" type="password" placeholder="Enter Password" id="password" name="password" onfocusout="checkPasswords()" required>
+                <br>
+                
+    
+                <p id="create-account_form__signIn">Don't have an account?<a href="#">Register here</a></p>
+    
+                <div class="create-account_register-buttons">
+                    <button type="submit" class="create-account__signUp-btn" onclick="validate()">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
