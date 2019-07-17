@@ -15,11 +15,11 @@
 #### Home Screen 
 <img width="1439" alt="HomeScreen" src="https://user-images.githubusercontent.com/41659296/61393393-db534280-a88e-11e9-96b9-64a96f6a7b11.png">
 
-#### Detailed market Analysis while on purchase page
+#### Detailed Market Analysis
 <img width="1436" alt="Graph1" src="https://user-images.githubusercontent.com/41659296/61393268-a0e9a580-a88e-11e9-97e6-f653beeeebd9.png">
 
-#### Market Page with live updates
+#### Market Page with Live Updates
 <img width="1440" alt="Market" src="https://user-images.githubusercontent.com/41659296/61393331-c080ce00-a88e-11e9-80f4-f64111f8069a.png">
 
 #### Create an Account
-![Create Account Page](https://user-images.githubusercontent.com/41659296/61089486-48875380-a409-11e9-95b9-d4a3a6cd47af.PNG)
+<img width="1440" alt="Sign Up" src="https://user-images.githubusercontent.com/41659296/61393477-076ec380-a88f-11e9-9c5a-d3347da4bee0.png">
