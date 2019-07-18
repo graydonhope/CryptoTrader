@@ -9,6 +9,9 @@ body{
     color: white;
     background-image: url("../assets/background.png")
 }
+a:hover{
+    text-decoration: none;
+}
 ::placeholder {
     color: #f5f5f5;
     opacity: 0.5; 
