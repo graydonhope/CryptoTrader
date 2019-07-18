@@ -7,6 +7,7 @@ var password = document.getElementById("password").value;
 if ( username == "filipb923" && password == "12341234"){
 	alert ("Login successfully");
 	window.location = "success.html"; // Redirecting to other page.
+
 	return false;
 }
 

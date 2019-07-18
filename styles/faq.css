@@ -5,9 +5,9 @@
 }
 
 body {
-  color: #4B4B4B;
-  font-family: sans-serif;
-  background-image: url("../images/bkg2.jpeg")
+  color: white;
+  font-family: 'Roboto';
+  background-image: url("../assets/background.png")
 
 
 }
@@ -38,10 +38,30 @@ span {
   letter-spacing: 0px;
 }
 
+
 p {
+  font-family: 'Roboto';
   font-weight: 200;
   line-height: 1.5;
   font-size: 14px;
+  color: black;
+}
+
+p2 {
+
+  font-size: 45px;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: bold;
+
+}
+
+p3 {
+
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto';
+
 }
 
 /* Styles for Accordion */
