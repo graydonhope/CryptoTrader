@@ -47,6 +47,9 @@ p {
   color: black;
 }
 
+li a {
+  color: white;
+}
 p2 {
 
   font-size: 45px;
